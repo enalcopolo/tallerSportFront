@@ -3,9 +3,10 @@ import { Observable } from 'rxjs/Observable';
 
 import { Sport } from './sport';
 import { HttpClient } from '@angular/common/http';
+import { enviroment } from '../../enviroments/enviroment';
 
-const API_URL = "../../assets/";
-const sports = '/sports.json';
+const API_URL = enviroment.apiURL;
+const sports = '/sports';
 
 /**
 * The service provider for everything related to sports
